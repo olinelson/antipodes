@@ -1,11 +1,21 @@
 import React from "react";
-import { Image } from "semantic-ui-react";
+import { Container,Image } from "semantic-ui-react";
 
 export default function Banner() {
   return (
-    <Image
-      src="https://antipodes-band-bucket.storage.googleapis.com/antipodes3.jpg"
+    <div  fluid
+
+      className="banner"
+      >
+      <div
       fluid
-    />
+      className="banner-text-container"
+      text="true">
+        <h1>Antipodes</h1>
+      </div>
+
+
+    </div>
+   
   );
 }

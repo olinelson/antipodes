@@ -6,3 +6,41 @@
   opacity: 0.75;
   color:black;
 }
+
+
+
+.footer{
+  /* background-color: rgba(53, 134, 171, 0.55); */
+  height: 15vh;
+}
+
+.banner {
+  background-image: url("https://antipodes-band-bucket.storage.googleapis.com/antipodes3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 66.233766233766234vw;
+  /* max-height: 100vh; */
+
+  display: grid !important;
+  
+}
+
+.banner-text-container{
+  color: white;
+  align-self: center;
+  justify-self: center;
+  width: 90%;
+}
+.banner-text-container h1 {
+  font-size: 6rem;
+
+}
+
+.menu .item {
+  color: #3585AB !important;
+}
+
+
+

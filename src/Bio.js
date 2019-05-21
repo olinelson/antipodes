@@ -6,9 +6,6 @@ import Quote from "./Quote";
 export default function Bio() {
   return (
     <Container
-      style={{
-        marginTop: "2rem"
-      }}
       textAlign="justified"
     >
       <h1>Bio</h1>

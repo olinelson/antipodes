@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Menu } from "semantic-ui-react";
-
+import { Menu, Icon } from "semantic-ui-react";
 
 export default class NavBar extends Component {
   state = { activeItem: "home" };
@@ -11,33 +10,48 @@ export default class NavBar extends Component {
     const { activeItem } = this.state;
 
     return (
-      <Menu fixed={"top"} secondary>
+      <Menu fixed="top"   secondary >
         <Menu.Item
           name="home"
           active={activeItem === "home"}
           onClick={this.handleItemClick}
-          style={{ color: "white" }}
         />
         <Menu.Item
-          name="messages"
+          name="news"
           active={activeItem === "messages"}
           onClick={this.handleItemClick}
-          style={{ color: "white" }}
         />
         <Menu.Item
-          name="friends"
+          name="events"
           active={activeItem === "friends"}
           onClick={this.handleItemClick}
-          style={{ color: "white" }}
         />
-        <Menu.Menu position="right">
-          <Menu.Item
-            name="logout"
-            active={activeItem === "logout"}
-            onClick={this.handleItemClick}
-            style={{ color: "white" }}
-          />
-        </Menu.Menu>
+        <Menu.Item
+          name="video"
+          active={activeItem === "logout"}
+          onClick={this.handleItemClick}
+        />
+        <Menu.Item
+          name="bio"
+          active={activeItem === "logout"}
+          onClick={this.handleItemClick}
+        />
+        <Menu.Item
+          name="contact"
+          active={activeItem === "logout"}
+          onClick={this.handleItemClick}
+        />
+        <Menu.Menu position="right" />
+
+        <Menu.Item name="facebook">
+          <Icon name="facebook" />
+        </Menu.Item>
+        <Menu.Item name="bandcamp">
+          <Icon name="bandcamp" />
+        </Menu.Item>
+        <Menu.Item name="youtube">
+          <Icon name="youtube" />
+        </Menu.Item>
       </Menu>
     );
   }
