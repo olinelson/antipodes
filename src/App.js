@@ -70,49 +70,67 @@ class App extends Component {
 
     return (
       <Fragment>
-        <Menu fixed="top" secondary>
-          <Menu.Item
-            name="home"
-            active={activeItem === "home"}
-            onClick={this.handleItemClick}
+        <Menu fixed="top" pointing  secondary  className="menu_bar">
+          <Link
+            className=" menu item"
+            activeClass="active"
+            to="news"
+            spy={true}
+            smooth={true}
+            offset={-30}
+            duration={500}
           >
-            <Link
-              activeClass="active"
-              to="test1"
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={500}
+            News
+          </Link>
 
-            >
-              Test 2 (delay)
-            </Link>
-          </Menu.Item>
-          <Menu.Item
-            name="news"
-            active={activeItem === "messages"}
-            onClick={this.handleItemClick}
-          />
-          <Menu.Item
-            name="events"
-            active={activeItem === "friends"}
-            onClick={this.handleItemClick}
-          />
-          <Menu.Item
-            name="video"
-            active={activeItem === "logout"}
-            onClick={this.handleItemClick}
-          />
-          <Menu.Item
-            name="bio"
-            active={activeItem === "logout"}
-            onClick={this.handleItemClick}
-          />
-          <Menu.Item
-            name="contact"
-            active={activeItem === "logout"}
-            onClick={this.handleItemClick}
-          />
+          <Link
+            className=" menu item"
+            activeClass="active"
+            to="events"
+            spy={true}
+            smooth={true}
+            offset={-35}
+            duration={500}
+          >
+            Events
+          </Link>
+
+          <Link
+            className=" menu item"
+            activeClass="active"
+            to="video"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            Video
+          </Link>
+
+          <Link
+            className=" menu item"
+            activeClass="active"
+            to="bio"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            About
+          </Link>
+
+          <Link
+            className=" menu item"
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            Contact
+          </Link>
+
           <Menu.Menu position="right" />
 
           <Menu.Item name="facebook">
@@ -129,24 +147,33 @@ class App extends Component {
 
         <Divider hidden />
 
-        <NewsContainer />
+        <Element name="news" className="element">
+          <NewsContainer />
+        </Element>
 
         <Divider hidden />
 
-        <BandsInTown />
+        <Element name="events" className="element">
+          <BandsInTown />
+        </Element>
 
         <Divider hidden />
-        <Element name="test1" className="element">
+
+        <Element name="video" className="element">
           <Video />
         </Element>
 
         <Divider hidden />
 
-        <Bio />
+        <Element name="bio" className="element">
+          <Bio />
+        </Element>
 
         <Divider hidden />
 
-        <Contact />
+        <Element name="contact" className="element">
+          <Contact />
+        </Element>
 
         <Divider hidden />
         <Divider hidden />

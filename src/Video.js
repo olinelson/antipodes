@@ -48,6 +48,7 @@ export default class SimpleSlider extends Component {
     };
     return (
       <Container>
+        <h1>Video</h1>
         <Slider {...settings}>
           <Embed id="NnFzxJgZjiI" placeholder={pic1} source="youtube" />
           <Embed id="4BPnDuYu8Ts" placeholder={pic2} source="youtube" />

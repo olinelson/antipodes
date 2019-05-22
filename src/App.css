@@ -39,8 +39,24 @@
 }
 
 .menu .item {
-  color: #3585AB !important;
+  color: black !important;
+  font-size: 1.2rem;
+
+  
 }
 
+.icon {
+  font-size: 1.5rem !important;
+}
+
+.menu_bar {
+  /* background-color: rgba(0, 0, 0, 0.6) !important; */
+background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0)) !important;
+border: none !important;
+}
+
+ .item .active {
+  font-size: 10rem !important;
+}
 
 
