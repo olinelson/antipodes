@@ -1,5 +1,6 @@
 {
   "name": "antipodes-react",
+  "homepage": "https://olinelson.github.io/antipodes/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
