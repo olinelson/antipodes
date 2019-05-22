@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "807e5e9c54dfd8c05cac074af8fc0095",
+    "revision": "a8570c144f18a48b585aaabb20ce8ca8",
     "url": "/antipodes/index.html"
   },
   {
-    "revision": "c61c9e86aa3d75b7f6ba",
+    "revision": "8374483c1ab35fd11a7e",
     "url": "/antipodes/static/css/2.642be2df.chunk.css"
   },
   {
-    "revision": "c44e430ca3ff18c4da41",
-    "url": "/antipodes/static/css/main.44d86850.chunk.css"
+    "revision": "c2b3d157774b3ecc3bdb",
+    "url": "/antipodes/static/css/main.2d0ee65d.chunk.css"
   },
   {
-    "revision": "c61c9e86aa3d75b7f6ba",
-    "url": "/antipodes/static/js/2.95735cb6.chunk.js"
+    "revision": "8374483c1ab35fd11a7e",
+    "url": "/antipodes/static/js/2.9d27831b.chunk.js"
   },
   {
-    "revision": "c44e430ca3ff18c4da41",
-    "url": "/antipodes/static/js/main.0594010f.chunk.js"
+    "revision": "c2b3d157774b3ecc3bdb",
+    "url": "/antipodes/static/js/main.ff1d3587.chunk.js"
   },
   {
     "revision": "24e22b395d29958f0388",
