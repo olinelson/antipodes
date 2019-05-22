@@ -2,7 +2,10 @@ import React, { Fragment, Component } from "react";
 import "./App.css";
 
 // semantic components
-import { Container, Divider, Menu, Icon } from "semantic-ui-react";
+import { Container, Divider, Icon } from "semantic-ui-react";
+
+// hamburger
+import { slide as Menu } from "react-burger-menu";
 
 // react-scroll
 import * as Scroll from "react-scroll";
@@ -23,6 +26,7 @@ import Video from "./Video";
 import Bio from "./Bio";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import { Z_FIXED } from "zlib";
 
 class App extends Component {
   state = { activeItem: "home" };
@@ -69,10 +73,16 @@ class App extends Component {
     const { activeItem } = this.state;
 
     return (
-      <Fragment>
-        <Menu fixed="top" pointing  secondary  className="menu_bar">
+      <div id="outer-container">
+        <Menu
+          pageWrapId={"page-wrap"}
+          outerContainerId={"outer-container"}
+          right
+          customBurgerIcon={<Icon name="bars" />}
+          customCrossIcon={<Icon name="close" />}
+          id="elastic"
+        >
           <Link
-            className=" menu item"
             activeClass="active"
             to="news"
             spy={true}
@@ -84,7 +94,6 @@ class App extends Component {
           </Link>
 
           <Link
-            className=" menu item"
             activeClass="active"
             to="events"
             spy={true}
@@ -96,7 +105,6 @@ class App extends Component {
           </Link>
 
           <Link
-            className=" menu item"
             activeClass="active"
             to="video"
             spy={true}
@@ -108,7 +116,6 @@ class App extends Component {
           </Link>
 
           <Link
-            className=" menu item"
             activeClass="active"
             to="bio"
             spy={true}
@@ -120,7 +127,6 @@ class App extends Component {
           </Link>
 
           <Link
-            className=" menu item"
             activeClass="active"
             to="contact"
             spy={true}
@@ -131,55 +137,52 @@ class App extends Component {
             Contact
           </Link>
 
-          <Menu.Menu position="right" />
+          <Icon name="facebook" />
 
-          <Menu.Item name="facebook">
-            <Icon name="facebook" />
-          </Menu.Item>
-          <Menu.Item name="bandcamp">
-            <Icon name="bandcamp" />
-          </Menu.Item>
-          <Menu.Item name="youtube">
-            <Icon name="youtube" />
-          </Menu.Item>
+          <Icon name="bandcamp" />
+
+          <Icon name="youtube" />
         </Menu>
-        <Banner />
 
-        <Divider hidden />
+        <main id="page-wrap">
+          <Banner />
 
-        <Element name="news" className="element">
-          <NewsContainer />
-        </Element>
+          <Divider hidden />
 
-        <Divider hidden />
+          <Element name="news" className="element">
+            <NewsContainer />
+          </Element>
 
-        <Element name="events" className="element">
-          <BandsInTown />
-        </Element>
+          <Divider hidden />
 
-        <Divider hidden />
+          <Element name="events" className="element">
+            <BandsInTown />
+          </Element>
 
-        <Element name="video" className="element">
-          <Video />
-        </Element>
+          <Divider hidden />
 
-        <Divider hidden />
+          <Element name="video" className="element">
+            <Video />
+          </Element>
 
-        <Element name="bio" className="element">
-          <Bio />
-        </Element>
+          <Divider hidden />
 
-        <Divider hidden />
+          <Element name="bio" className="element">
+            <Bio />
+          </Element>
 
-        <Element name="contact" className="element">
-          <Contact />
-        </Element>
+          <Divider hidden />
 
-        <Divider hidden />
-        <Divider hidden />
+          <Element name="contact" className="element">
+            <Contact />
+          </Element>
 
-        <Footer />
-      </Fragment>
+          <Divider hidden />
+          <Divider hidden />
+
+          <Footer />
+        </main>
+      </div>
     );
   }
 }
