@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 
 // semantic components
-import { Divider, Icon, Image } from "semantic-ui-react";
+import { Divider, Icon, Image, Container } from "semantic-ui-react";
 
 // hamburger
 import { slide as Menu } from "react-burger-menu";
@@ -73,7 +73,7 @@ class App extends Component {
     const { activeItem } = this.state;
 
     return (
-      <div id="outer-container">
+      <Container fluid id="outer-container">
         <Menu
           pageWrapId={"page-wrap"}
           outerContainerId={"outer-container"}
@@ -139,7 +139,7 @@ class App extends Component {
           <Icon name="youtube" />
         </Menu>
 
-        <main id="page-wrap">
+        <Container fluid id="page-wrap">
           <Banner />
 
           <Divider hidden />
@@ -202,8 +202,8 @@ class App extends Component {
 
 
           <Footer />
-        </main>
-      </div>
+        </Container>
+      </Container>
     );
   }
 }
