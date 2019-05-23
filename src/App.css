@@ -75,7 +75,7 @@ border: none !important;
   height: 3rem;
   background-color: white;
   right: 0px;
-  top: 3rem;
+  top: 4vw;
   display: grid;
   align-content: center !important;
   border-radius:  18px 0 0 18px;
@@ -118,6 +118,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
   overflow:hidden!important;
+
+
 }
 
 /* Morph shape necessary with bubble or elastic */
