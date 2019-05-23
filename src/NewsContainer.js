@@ -9,7 +9,7 @@ export default function NewsContainer() {
         paddingTop: "2rem"
       }}
     >
-      <Grid columns={2} relaxed="very">
+      <Grid stackable={true} columns={2} relaxed="very">
         <Grid.Column>
           <Header as="h1">New Album Out Now</Header>
           <p>
@@ -21,7 +21,7 @@ export default function NewsContainer() {
             shared vision that lifts them above the ordinary."
           </p>
         </Grid.Column>
-        <Grid.Column>
+        <Grid.Column textAlign="center">
           <iframe
             title="bandcamp-iframe"
             style={{

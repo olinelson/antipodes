@@ -155,3 +155,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 
 
+.quote-box {
+  display:grid;
+  grid-template-columns: 1fr 8fr 1fr;
+}
+
+.quote.right {
+  justify-self: flex-end;
+}

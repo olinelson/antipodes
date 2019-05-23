@@ -8,7 +8,7 @@ export default function Bio() {
     <Container
       textAlign="justified"
     >
-      <h1>Bio</h1>
+      <h1>About</h1>
       <p>
         Antipodes is a collective of New Zealand, Australian and European jazz
         musicians co-led by pianist Luke Sweeting (Freedman Jazz Fellowship

@@ -1,8 +1,8 @@
-import React, { Fragment, Component } from "react";
+import React, { Component } from "react";
 import "./App.css";
 
 // semantic components
-import { Container, Divider, Icon } from "semantic-ui-react";
+import { Divider, Icon, Image } from "semantic-ui-react";
 
 // hamburger
 import { slide as Menu } from "react-burger-menu";
@@ -27,6 +27,7 @@ import Bio from "./Bio";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import { Z_FIXED } from "zlib";
+
 
 class App extends Component {
   state = { activeItem: "home" };
@@ -80,7 +81,7 @@ class App extends Component {
           right
           customBurgerIcon={<Icon name="bars" />}
           customCrossIcon={<Icon name="close" />}
-          id="elastic"
+          // id="elastic"
         >
           <Link
             activeClass="active"
@@ -144,6 +145,7 @@ class App extends Component {
           <Icon name="youtube" />
         </Menu>
 
+       
         <main id="page-wrap">
           <Banner />
 
@@ -155,9 +157,25 @@ class App extends Component {
 
           <Divider hidden />
 
+          <Image
+            fluid
+            src="https://antipodes-band-bucket.storage.googleapis.com/band1.jpg"
+          />
+
+          <Divider hidden />
+
           <Element name="events" className="element">
             <BandsInTown />
           </Element>
+
+          <Divider hidden />
+
+          <Image
+            fluid
+            src="https://antipodes-band-bucket.storage.googleapis.com/band2.jpg"
+          />
+
+          <Divider hidden />
 
           <Divider hidden />
 
@@ -167,9 +185,23 @@ class App extends Component {
 
           <Divider hidden />
 
+          <Image
+            fluid
+            src="https://antipodes-band-bucket.storage.googleapis.com/antipodes2.jpg"
+          />
+
+          <Divider hidden />
+
           <Element name="bio" className="element">
             <Bio />
           </Element>
+
+          <Divider hidden />
+
+          <Image
+            fluid
+            src="https://antipodes-band-bucket.storage.googleapis.com/antipodes1.jpg"
+          />
 
           <Divider hidden />
 
