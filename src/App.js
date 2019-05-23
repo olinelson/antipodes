@@ -28,7 +28,6 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import { Z_FIXED } from "zlib";
 
-
 class App extends Component {
   state = { activeItem: "home" };
 
@@ -88,7 +87,6 @@ class App extends Component {
             to="news"
             spy={true}
             smooth={true}
-            offset={-30}
             duration={500}
           >
             News
@@ -99,7 +97,6 @@ class App extends Component {
             to="events"
             spy={true}
             smooth={true}
-            offset={-35}
             duration={500}
           >
             Events
@@ -110,7 +107,6 @@ class App extends Component {
             to="video"
             spy={true}
             smooth={true}
-            offset={-50}
             duration={500}
           >
             Video
@@ -121,7 +117,6 @@ class App extends Component {
             to="bio"
             spy={true}
             smooth={true}
-            offset={-50}
             duration={500}
           >
             About
@@ -132,7 +127,6 @@ class App extends Component {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-50}
             duration={500}
           >
             Contact
@@ -145,7 +139,6 @@ class App extends Component {
           <Icon name="youtube" />
         </Menu>
 
-       
         <main id="page-wrap">
           <Banner />
 
@@ -167,15 +160,6 @@ class App extends Component {
           <Element name="events" className="element">
             <BandsInTown />
           </Element>
-
-          <Divider hidden />
-
-          <Image
-            fluid
-            src="https://antipodes-band-bucket.storage.googleapis.com/band2.jpg"
-          />
-
-          <Divider hidden />
 
           <Divider hidden />
 
@@ -208,9 +192,14 @@ class App extends Component {
           <Element name="contact" className="element">
             <Contact />
           </Element>
+          <Divider hidden />
 
-          <Divider hidden />
-          <Divider hidden />
+          <Image
+            fluid
+            src="https://antipodes-band-bucket.storage.googleapis.com/band2.jpg"
+          />
+
+
 
           <Footer />
         </main>
