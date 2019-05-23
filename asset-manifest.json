@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/antipodes/static/css/main.5f8b83ee.chunk.css",
+    "main.css": "/antipodes/static/css/main.b153a245.chunk.css",
     "main.js": "/antipodes/static/js/main.146e0b73.chunk.js",
     "main.js.map": "/antipodes/static/js/main.146e0b73.chunk.js.map",
     "runtime~main.js": "/antipodes/static/js/runtime~main.a23863ab.js",
@@ -9,10 +9,10 @@
     "static/js/2.01f63c6e.chunk.js": "/antipodes/static/js/2.01f63c6e.chunk.js",
     "static/js/2.01f63c6e.chunk.js.map": "/antipodes/static/js/2.01f63c6e.chunk.js.map",
     "index.html": "/antipodes/index.html",
-    "precache-manifest.ec2e32bcc107a9d998b2f16eeb9ac57e.js": "/antipodes/precache-manifest.ec2e32bcc107a9d998b2f16eeb9ac57e.js",
+    "precache-manifest.b26b6e466ac662ddc951012274c39076.js": "/antipodes/precache-manifest.b26b6e466ac662ddc951012274c39076.js",
     "service-worker.js": "/antipodes/service-worker.js",
     "static/css/2.642be2df.chunk.css.map": "/antipodes/static/css/2.642be2df.chunk.css.map",
-    "static/css/main.5f8b83ee.chunk.css.map": "/antipodes/static/css/main.5f8b83ee.chunk.css.map",
+    "static/css/main.b153a245.chunk.css.map": "/antipodes/static/css/main.b153a245.chunk.css.map",
     "static/media/semantic.min.css": "/antipodes/static/media/outline-icons.ef60a4f6.woff",
     "static/media/pic1.jpg": "/antipodes/static/media/pic1.4475dfb2.jpg",
     "static/media/pic2.jpg": "/antipodes/static/media/pic2.e3e3966f.jpg",
