@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import "./App.css";
 
 // semantic components
-import { Divider, Icon, Image } from "semantic-ui-react";
+import { Divider, Icon, Image, Container } from "semantic-ui-react";
 
 // hamburger
 import { slide as Menu } from "react-burger-menu";
@@ -138,21 +138,19 @@ class App extends Component {
 
           <Icon name="youtube" />
         </Menu>
-
         <Banner />
-
         <Divider hidden />
-
         <Element name="news" className="element">
           <NewsContainer />
         </Element>
-
+        `
         <Divider hidden />
 
-        <Image
-          fluid
-          src="https://antipodes-band-bucket.storage.googleapis.com/band1.jpg"
-        />
+          <Image
+            centered={true}
+            fluid
+            src="https://antipodes-band-bucket.storage.googleapis.com/band1.jpg"
+          />
 
         <Divider hidden />
 
@@ -169,35 +167,30 @@ class App extends Component {
         <Divider hidden />
 
         <Image
+          centered
           fluid
           src="https://antipodes-band-bucket.storage.googleapis.com/antipodes2.jpg"
         />
-
         <Divider hidden />
-
         <Element name="bio" className="element">
           <Bio />
         </Element>
-
         <Divider hidden />
-
         <Image
+          centered
           fluid
           src="https://antipodes-band-bucket.storage.googleapis.com/antipodes1.jpg"
         />
-
         <Divider hidden />
-
         <Element name="contact" className="element">
           <Contact />
         </Element>
         <Divider hidden />
-
         <Image
+          centered
           fluid
           src="https://antipodes-band-bucket.storage.googleapis.com/band2.jpg"
         />
-
         <Footer />
       </Fragment>
     );

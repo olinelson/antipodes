@@ -40,7 +40,7 @@ a{
   width: 90%;
 }
 .banner-text-container h1 {
-  font-size: 6rem;
+  font-size: 20vw;
 
 }
 
@@ -167,3 +167,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
   justify-self: flex-end;
 }
 
+
+.image {
+  max-width: 80rem!important;
+  justify-self: center;
+}
+
+.ui.embed {
+  max-width: 80rem!important;
+}
