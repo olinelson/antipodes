@@ -57,7 +57,17 @@ a{
   width: 90%;
 }
 .banner-text-container h1 {
-  font-size: 20vw;
+  font-size: 10rem;
+  /* max-width: 5rem; */
+
+}
+
+ @media only screen and (max-width: 700px) {
+ .banner-text-container h1 {
+  font-size: 5rem;
+  /* max-width: 5rem; */
+
+}
 
 }
 

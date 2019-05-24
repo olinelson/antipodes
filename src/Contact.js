@@ -12,7 +12,7 @@ export default function Contact() {
         </Form.Field>
         <Form.Field>
           <label>Email</label>
-          <input type="email" name="email" placeholder="youremail@website.com" />
+          <input type="email" name="email" placeholder="youremail@gmail.com" />
         </Form.Field>
         <Form.Field />
         <Form.TextArea
