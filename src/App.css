@@ -73,7 +73,7 @@ border: none !important;
   position: fixed;
   width: 5rem;
   height: 3rem;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.577);
   right: 0px;
   top: 4vw;
   display: grid;
@@ -153,7 +153,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Styling of overlay */
 .bm-overlay {
-  color: #DCDCDC;;
+  color: #DCDCDC;
 }
 
 
