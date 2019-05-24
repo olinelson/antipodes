@@ -7,6 +7,9 @@ import { Divider, Icon, Image, Container } from "semantic-ui-react";
 // hamburger
 import { slide as Menu } from "react-burger-menu";
 
+// lazy load
+import LazyLoad from "react-lazyload";
+
 // react-scroll
 import * as Scroll from "react-scroll";
 import {
@@ -138,13 +141,19 @@ class App extends Component {
 
           <Icon name="youtube" />
         </Menu>
+        {/* Banner */}
+
         <Banner />
-        <Divider hidden />
-        <Element name="news" className="element">
-          <NewsContainer />
-        </Element>
-        `
-        <Divider hidden />
+
+        {/* News Section */}
+
+          <Divider hidden />
+          <Element name="news" className="element">
+            <NewsContainer />
+          </Element>
+          <Divider hidden />
+
+        {/* Image */}
 
           <Image
             centered={true}
@@ -152,36 +161,40 @@ class App extends Component {
             src="https://antipodes-band-bucket.storage.googleapis.com/band1.jpg"
           />
 
-        <Divider hidden />
+        {/* Events */}
 
-        <Element name="events" className="element">
-          <BandsInTown />
-        </Element>
+          <Divider hidden />
+          <Element name="events" className="element">
+            <BandsInTown />
+          </Element>
+          <Divider hidden />
 
-        <Divider hidden />
-
+        {/* Video */}
         <Element name="video" className="element">
           <Video />
         </Element>
-
         <Divider hidden />
 
+        {/* Image */}
         <Image
           centered
           fluid
           src="https://antipodes-band-bucket.storage.googleapis.com/antipodes2.jpg"
         />
         <Divider hidden />
+        {/* Bio */}
         <Element name="bio" className="element">
           <Bio />
         </Element>
         <Divider hidden />
+        {/* Image */}
         <Image
           centered
           fluid
           src="https://antipodes-band-bucket.storage.googleapis.com/antipodes1.jpg"
         />
         <Divider hidden />
+        {/* Contact */}
         <Element name="contact" className="element">
           <Contact />
         </Element>
