@@ -172,9 +172,6 @@ class App extends Component {
         </Element>
         <Divider hidden />
 
-        {/* Image */}
-        <DividerImage filename="band2" />
-        <Divider hidden />
         {/* Bio */}
         <Element name="bio" className="element">
           <Bio />
@@ -188,7 +185,11 @@ class App extends Component {
           <Contact />
         </Element>
         <Divider hidden />
-        
+
+        {/* Image */}
+        <DividerImage filename="band2" />
+
+
         <Footer />
       </Fragment>
     );
