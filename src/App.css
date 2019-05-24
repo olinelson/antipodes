@@ -21,7 +21,7 @@ a{
 }
 
 .banner {
-  background-image: url("https://antipodes-band-bucket.storage.googleapis.com/antipodes3.jpg");
+  background-image: url("https://antipodes-band-bucket.storage.googleapis.com/antipodes3/antipodes3phone.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -32,6 +32,23 @@ a{
   display: grid !important;
   
 }
+ @media only screen and (min-width: 480px) {
+  .banner {
+    background-image: url("https://antipodes-band-bucket.storage.googleapis.com/antipodes3/antipodes3tablet.jpg");
+
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .banner {
+    background-image: url("https://antipodes-band-bucket.storage.googleapis.com/antipodes3/antipodes3big.jpg");
+
+  }
+}
+
+
+
 
 .banner-text-container{
   color: white;

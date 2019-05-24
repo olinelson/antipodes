@@ -30,6 +30,7 @@ import Bio from "./Bio";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import { Z_FIXED } from "zlib";
+import DividerImage from "./DividerImage";
 
 class App extends Component {
   state = { activeItem: "home" };
@@ -147,27 +148,23 @@ class App extends Component {
 
         {/* News Section */}
 
-          <Divider hidden />
-          <Element name="news" className="element">
-            <NewsContainer />
-          </Element>
-          <Divider hidden />
+        <Divider hidden />
+        <Element name="news" className="element">
+          <NewsContainer />
+        </Element>
+        <Divider hidden />
 
         {/* Image */}
 
-          <Image
-            centered={true}
-            fluid
-            src="https://antipodes-band-bucket.storage.googleapis.com/band1.jpg"
-          />
+        <DividerImage filename="antipodes2" />
 
         {/* Events */}
 
-          <Divider hidden />
-          <Element name="events" className="element">
-            <BandsInTown />
-          </Element>
-          <Divider hidden />
+        <Divider hidden />
+        <Element name="events" className="element">
+          <BandsInTown />
+        </Element>
+        <Divider hidden />
 
         {/* Video */}
         <Element name="video" className="element">
@@ -176,11 +173,7 @@ class App extends Component {
         <Divider hidden />
 
         {/* Image */}
-        <Image
-          centered
-          fluid
-          src="https://antipodes-band-bucket.storage.googleapis.com/antipodes2.jpg"
-        />
+        <DividerImage filename="band2" />
         <Divider hidden />
         {/* Bio */}
         <Element name="bio" className="element">
@@ -188,22 +181,14 @@ class App extends Component {
         </Element>
         <Divider hidden />
         {/* Image */}
-        <Image
-          centered
-          fluid
-          src="https://antipodes-band-bucket.storage.googleapis.com/antipodes1.jpg"
-        />
+        <DividerImage filename="band1" />
         <Divider hidden />
         {/* Contact */}
         <Element name="contact" className="element">
           <Contact />
         </Element>
         <Divider hidden />
-        <Image
-          centered
-          fluid
-          src="https://antipodes-band-bucket.storage.googleapis.com/band2.jpg"
-        />
+        
         <Footer />
       </Fragment>
     );
