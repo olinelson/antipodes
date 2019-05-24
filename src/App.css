@@ -92,6 +92,9 @@ border: none !important;
   font-size: 10rem !important;
 }
 
+i.icon {
+  font-size: 2rem !important;
+}
 
 /* hamburger menu styles */
 
