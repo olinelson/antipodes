@@ -2,10 +2,10 @@ import React, { Component, Fragment } from "react";
 import "./App.css";
 
 // semantic components
-import { Divider, Icon, Image, Container } from "semantic-ui-react";
+import { Divider, Icon, Image, Container, Menu } from "semantic-ui-react";
 
 // hamburger
-import { slide as Menu } from "react-burger-menu";
+import { slide as SlideMenu } from "react-burger-menu";
 
 // lazy load
 import LazyLoad from "react-lazyload";
@@ -78,7 +78,7 @@ class App extends Component {
 
     return (
       <Fragment>
-        <Menu
+        <SlideMenu
           pageWrapId={"page-wrap"}
           outerContainerId={"outer-container"}
           right
@@ -136,12 +136,18 @@ class App extends Component {
             Contact
           </Link>
 
-          <Icon name="facebook" />
+          <a href="https://www.facebook.com/antipodesband/?fb_dtsg_ag=Adw5g7msJNoX3LaLV7T35nWqHQ-FZgul5B7ZDIfJHDTzEw%3AAdw0kEJJHTH0TeT6Wxu-3AdcNCFLkp8vdmt68OE7o03JOA">
+            <Icon name="facebook" />
+          </a>
 
-          <Icon name="bandcamp" />
+          <a href="https://rattle-records.bandcamp.com/album/good-winter">
+            <Icon name="bandcamp" />
+          </a>
 
-          <Icon name="youtube" />
-        </Menu>
+          <a href="https://www.youtube.com/channel/UCprU4MaJyO_JH8Sc6OS5LXA">
+            <Icon name="youtube" />
+          </a>
+        </SlideMenu>
         {/* Banner */}
 
         <Banner />
@@ -188,7 +194,6 @@ class App extends Component {
 
         {/* Image */}
         <DividerImage filename="band2" />
-
 
         <Footer />
       </Fragment>
