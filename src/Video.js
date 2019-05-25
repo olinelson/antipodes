@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-
 import pic1 from "./resources/pic1.jpg";
 import pic2 from "./resources/pic2.jpg";
 import pic3 from "./resources/pic3.jpg";
@@ -13,8 +12,8 @@ import InfiniteCarousel from "react-leaf-carousel";
 
 export default class Video extends Component {
   render() {
-  
     return (
+      <Container>
         <InfiniteCarousel
           breakpoints={[
             {
@@ -45,7 +44,7 @@ export default class Video extends Component {
           <Embed id="4BPnDuYu8Ts" placeholder={pic2} source="youtube" />
           <Embed id="uaN1BwKqg1Q" placeholder={pic3} source="youtube" />
         </InfiniteCarousel>
-
+      </Container>
     );
   }
 }

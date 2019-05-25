@@ -7,9 +7,6 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
-// parrallax effect
-import { ParallaxProvider } from "react-scroll-parallax";
-
 ReactDOM.render(
   <App/>,
   document.getElementById("root")

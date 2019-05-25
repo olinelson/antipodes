@@ -4,7 +4,7 @@ import { Container, Segment } from "semantic-ui-react";
 export default function BandsInTown() {
   return (
     <Container>
-      <h1>Events</h1>
+      {/* <h1>Events</h1>/ */}
       <Segment>
         <a
           class="bit-widget-initializer"

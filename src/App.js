@@ -160,10 +160,6 @@ class App extends Component {
         </Element>
         <Divider hidden />
 
-        {/* Image */}
-
-        <DividerImage filename="antipodes2" />
-
         {/* Events */}
 
         <Divider hidden />
@@ -172,28 +168,27 @@ class App extends Component {
         </Element>
         <Divider hidden />
 
-        {/* Video */}
-        <Element name="video" className="element">
-          <Video />
-        </Element>
-        <Divider hidden />
-
         {/* Bio */}
         <Element name="bio" className="element">
           <Bio />
         </Element>
         <Divider hidden />
-        {/* Image */}
-        <DividerImage filename="band1" />
+        <Divider />
+
         <Divider hidden />
+        <Divider hidden />
+
+        {/* Video */}
+        <Element name="video" className="element">
+          <Video />
+        </Element>
+        <Divider hidden />
+        <Divider />
         {/* Contact */}
         <Element name="contact" className="element">
           <Contact />
         </Element>
         <Divider hidden />
-
-        {/* Image */}
-        <DividerImage filename="band2" />
 
         <Footer />
       </Fragment>
