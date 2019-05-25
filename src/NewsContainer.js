@@ -5,9 +5,9 @@ import { Container, Header, Image, Grid, Embed } from "semantic-ui-react";
 export default function NewsContainer() {
   return (
     <Container
-      style={{
-        paddingTop: "2rem"
-      }}
+      // style={{
+      //   paddingTop: "2rem"
+      // }}
     >
       <Grid stackable={true} columns={2} relaxed="very">
         <Grid.Column textAlign="justified">
