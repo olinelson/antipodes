@@ -10,14 +10,14 @@ export default function Bio() {
     <Container text>
       <Grid stackable>
         <Grid.Row>
-          <Grid.Column width={8}>
+          <Grid.Column textAlign="justified" width={8}>
             <p>
-              <span className="h1 ui header">Antipodes</span> is a collective of New Zealand, Australian
-              and European jazz musicians co-led by pianist Luke Sweeting
-              (Freedman Jazz Fellowship finalist 2016) and saxophonist Jake
-              Baxendale. The group plays original compositions that emphasise
-              melody, emotive soundscapes, and an open improvisational
-              aesthetic.
+              <span className="h1 ui header">Antipodes</span> is a collective of
+              New Zealand, Australian and European jazz musicians co-led by
+              pianist Luke Sweeting (Freedman Jazz Fellowship finalist 2016) and
+              saxophonist Jake Baxendale. The group plays original compositions
+              that emphasise melody, emotive soundscapes, and an open
+              improvisational aesthetic.
             </p>
           </Grid.Column>
           <Grid.Column width={8}>
@@ -35,14 +35,14 @@ export default function Bio() {
         />
 
         <Grid.Row>
-          <Grid.Column width={8}>
+          <Grid.Column textAlign="justified" width={8}>
             <Image
               centered
               size="medium"
               src="https://antipodes-band-bucket.storage.googleapis.com/band1/band1tablet.jpg"
             />
           </Grid.Column>
-          <Grid.Column width={8}>
+          <Grid.Column textAlign="justified" width={8}>
             <p>
               Described during their recent tour of Australia as “a great
               blowing band with dense heads, occasional free and floating
@@ -59,7 +59,7 @@ export default function Bio() {
           body="Antipodes hits the mark on a number of levels. Firstly the writing is superb. The musicianship is also great but for me it is the communication of a shared vision that lifts them above the ordinary."
           author="John Fenton - Jazz Local 32"
         />
-        <p>
+        <p style={{textAlign: "justify"}}>
           Antipodes was formed after a chance meeting between Jake, Luke and
           drummer Aidan Lowe at a jam session in Berlin in 2013. Their musical
           connection became immediately apparent and they began writing and
