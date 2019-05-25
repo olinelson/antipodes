@@ -4,7 +4,7 @@ import { Button, Checkbox, Form, Container } from "semantic-ui-react";
 export default function Contact() {
   return (
     <Container>
-      <Form action="https://formspree.io/olivernelson@icloud.com" method="POST">
+      <Form action="https://formspree.io/lukesweeting@gmail.com" method="POST">
         <h1>Contact</h1>
         <Form.Field>
           <label>Full Name</label>
