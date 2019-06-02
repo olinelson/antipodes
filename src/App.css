@@ -20,8 +20,10 @@ a{
   height: 15vh;
 }
 
+
 .banner {
-  background-image: url("https://antipodes-band-bucket.storage.googleapis.com/antipodes3/antipodes3phone.jpg");
+  /* background-image: url("https://antipodes-band-bucket.storage.googleapis.com/antipodes3/antipodes3phone.jpg"); */
+  background-image: url("https://raw.githubusercontent.com/olinelson/antipodes/master/public/antipodes3/antipodes3phone.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -34,7 +36,7 @@ a{
 }
  @media only screen and (min-width: 480px) {
   .banner {
-    background-image: url("https://antipodes-band-bucket.storage.googleapis.com/antipodes3/antipodes3tablet.jpg");
+    background-image: url("https://raw.githubusercontent.com/olinelson/antipodes/master/public/antipodes3/antipodes3tablet.jpg");
 
   }
 
@@ -42,7 +44,7 @@ a{
 
 @media only screen and (min-width: 1024px) {
   .banner {
-    background-image: url("https://antipodes-band-bucket.storage.googleapis.com/antipodes3/antipodes3big.jpg");
+    background-image: url("https://raw.githubusercontent.com/olinelson/antipodes/master/public/antipodes3/antipodes3big.jpg");
 
   }
 }
