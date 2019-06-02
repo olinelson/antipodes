@@ -24,7 +24,8 @@ export default function Bio() {
             <Image
               centered
               size="medium"
-              src="https://antipodes-band-bucket.storage.googleapis.com/antipodes1/antipodes1tablet.jpg"
+
+              src="https://raw.githubusercontent.com/olinelson/antipodes/master/public/antipodes1/antipodes1tablet.jpg"
             />
           </Grid.Column>
         </Grid.Row>
@@ -39,7 +40,8 @@ export default function Bio() {
             <Image
               centered
               size="medium"
-              src="https://antipodes-band-bucket.storage.googleapis.com/band1/band1tablet.jpg"
+
+              src="https://raw.githubusercontent.com/olinelson/antipodes/master/public/band1/band1tablet.jpg"
             />
           </Grid.Column>
           <Grid.Column textAlign="justified" width={8}>
@@ -59,7 +61,7 @@ export default function Bio() {
           body="Antipodes hits the mark on a number of levels. Firstly the writing is superb. The musicianship is also great but for me it is the communication of a shared vision that lifts them above the ordinary."
           author="John Fenton - Jazz Local 32"
         />
-        <p style={{textAlign: "justify"}}>
+        <p style={{ textAlign: "justify" }}>
           Antipodes was formed after a chance meeting between Jake, Luke and
           drummer Aidan Lowe at a jam session in Berlin in 2013. Their musical
           connection became immediately apparent and they began writing and
