@@ -1,25 +1,10 @@
-import React, { Component, Fragment } from "react";
+import React, { useState, useRef } from "react";
 import "./App.css";
 
 // semantic components
-import { Divider, Icon, Image, Container, Menu } from "semantic-ui-react";
+import { Divider, Icon, Menu, Sidebar, Container } from "semantic-ui-react";
 
-// hamburger
-import { slide as SlideMenu } from "react-burger-menu";
 
-// lazy load
-import LazyLoad from "react-lazyload";
-
-// react-scroll
-import * as Scroll from "react-scroll";
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller
-} from "react-scroll";
 // page components
 // import NavBar from "./NavBar";
 import Banner from "./Banner";
@@ -28,172 +13,136 @@ import BandsInTown from "./BandsInTown";
 import Video from "./Video";
 import Bio from "./Bio";
 import Contact from "./Contact";
-import Footer from "./Footer";
-import { Z_FIXED } from "zlib";
-import DividerImage from "./DividerImage";
+import styled from 'styled-components'
 
-class App extends Component {
-  state = { activeItem: "home" };
+const RefDivider = styled.div`
+    height: 5hv;
+    min-height: 3rem;
+`
+const FooterContainer = styled.div`
+    height: 40vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background: rgba(0,0,0,0);
+  `
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+const Hamburger = styled(Icon)`
+  position: fixed;
+  top: 1.5rem;
+  right: 2rem;
+  z-index: 100;
+  visibility: ${(props) => props.visible ? 'visible' : 'hidden'};
+`
 
-  componentDidMount() {
-    Events.scrollEvent.register("begin", function(to, element) {
-      console.log("begin", arguments);
-    });
 
-    Events.scrollEvent.register("end", function(to, element) {
-      console.log("end", arguments);
-    });
+function App() {
+  const [sideBarOpen, setSideBarOpen] = useState(false)
 
-    scrollSpy.update();
-  }
+  const homeRef = useRef(null)
+  const newsRef = useRef(null)
+  const showsRef = useRef(null)
+  const aboutRef = useRef(null)
+  const contactRef = useRef(null)
+  const videoRef = useRef(null)
 
-  componentWillUnmount() {
-    Events.scrollEvent.remove("begin");
-    Events.scrollEvent.remove("end");
-  }
 
-  scrollToTop() {
-    scroll.scrollToTop();
-  }
-  scrollToBottom() {
-    scroll.scrollToBottom();
-  }
+  return <>
+    <Hamburger visible={!sideBarOpen} name="bars" size="big" onClick={() => setSideBarOpen(!sideBarOpen)} />
 
-  scrollTo() {
-    scroll.scrollTo(100);
-  }
+    <Sidebar
+      style={{ background: 'rgba(255,255,255,0.6)' }}
+      as={Menu}
+      animation='push'
+      icon='labeled'
+      onHide={() => setSideBarOpen(false)}
+      vertical
+      visible={sideBarOpen}
+      width='thin'
+      direction='right'
+    >
+      <Menu.Item
+        onClick={() => setSideBarOpen(false)}
+        icon="delete"
+      />
+      <Menu.Item
+        onClick={() => window.scroll({ top: homeRef.current.offsetTop, behavior: 'smooth' })}
+        content="Top"
+      />
+      <Menu.Item
+        onClick={() => window.scroll({ top: newsRef.current.offsetTop, behavior: 'smooth' })}
+        content="News"
+      />
+      <Menu.Item
+        onClick={() => window.scroll({ top: showsRef.current.offsetTop, behavior: 'smooth' })}
+        content="Shows"
+      />
+      <Menu.Item
+        onClick={() => window.scroll({ top: aboutRef.current.offsetTop, behavior: 'smooth' })}
+        content="About"
+      />
+      <Menu.Item
+        onClick={() => window.scroll({ top: videoRef.current.offsetTop, behavior: 'smooth' })}
+        content="Video"
+      />
+      <Menu.Item
+        onClick={() => window.scroll({ top: contactRef.current.offsetTop, behavior: 'smooth' })}
+        content="Contact"
+      />
+      <Menu.Item
+        icon="facebook"
+        target="blank"
+        href="https://www.facebook.com/antipodesband/?fb_dtsg_ag=Adw5g7msJNoX3LaLV7T35nWqHQ-FZgul5B7ZDIfJHDTzEw%3AAdw0kEJJHTH0TeT6Wxu-3AdcNCFLkp8vdmt68OE7o03JOA"
+      />
+      <Menu.Item href="https://rattle-records.bandcamp.com/album/good-winter"
+        icon="bandcamp"
+        target="blank"
+      />
+      <Menu.Item href="https://www.youtube.com/channel/UCprU4MaJyO_JH8Sc6OS5LXA" icon="youtube" target="blank" />
+    </Sidebar>
 
-  scrollMore() {
-    scroll.scrollMore(100);
-  }
 
-  handleSetActive() {
-    console.log();
-  }
 
-  render() {
-    const { activeItem } = this.state;
+    {/* Home */}
+    <div ref={homeRef} />
+    <Banner />
 
-    return (
-      <Fragment>
-        <SlideMenu
-          pageWrapId={"page-wrap"}
-          outerContainerId={"outer-container"}
-          right
-          customBurgerIcon={<Icon name="bars" />}
-          customCrossIcon={<Icon name="close" />}
-          // id="elastic"
-        >
-          <Link
-            activeClass="active"
-            to="news"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
-            News
-          </Link>
+    {/* News Section */}
+    <RefDivider ref={newsRef} />
+    <NewsContainer />
 
-          <Link
-            activeClass="active"
-            to="events"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
-            Events
-          </Link>
 
-          <Link
-            activeClass="active"
-            to="video"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
-            Video
-          </Link>
+    {/* Events */}
+    <RefDivider ref={showsRef} />
+    <BandsInTown />
 
-          <Link
-            activeClass="active"
-            to="bio"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
-            About
-          </Link>
 
-          <Link
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
-            Contact
-          </Link>
+    {/* Bio */}
+    <RefDivider ref={aboutRef} />
+    <Bio />
 
-          <a href="https://www.facebook.com/antipodesband/?fb_dtsg_ag=Adw5g7msJNoX3LaLV7T35nWqHQ-FZgul5B7ZDIfJHDTzEw%3AAdw0kEJJHTH0TeT6Wxu-3AdcNCFLkp8vdmt68OE7o03JOA">
-            <Icon name="facebook" />
-          </a>
 
-          <a href="https://rattle-records.bandcamp.com/album/good-winter">
-            <Icon name="bandcamp" />
-          </a>
+    {/* Video */}
+    <RefDivider ref={videoRef} />
+    <Video />
 
-          <a href="https://www.youtube.com/channel/UCprU4MaJyO_JH8Sc6OS5LXA">
-            <Icon name="youtube" />
-          </a>
-        </SlideMenu>
-        {/* Banner */}
+    <Divider hidden />
+    <Divider />
 
-        <Banner />
+    {/* Contact */}
+    <RefDivider ref={contactRef} />
+    <Contact />
 
-        {/* News Section */}
 
-        <Divider hidden />
-        <Element name="news" className="element">
-          <NewsContainer />
-        </Element>
-        <Divider hidden />
+    <FooterContainer>
+      <p>
+        <Icon name="copyright" />
+        Antipodes {new Date().getFullYear()}
+      </p>
+    </FooterContainer>
 
-        {/* Events */}
 
-        <Divider hidden />
-        <Element name="events" className="element">
-          <BandsInTown />
-        </Element>
-        <Divider hidden />
-
-        {/* Bio */}
-        <Element name="bio" className="element">
-          <Bio />
-        </Element>
-        <Divider hidden />
-        <Divider />
-
-        <Divider hidden />
-        <Divider hidden />
-
-        {/* Video */}
-        <Element name="video" className="element">
-          <Video />
-        </Element>
-        <Divider hidden />
-        <Divider />
-        {/* Contact */}
-        <Element name="contact" className="element">
-          <Contact />
-        </Element>
-        <Divider hidden />
-
-        <Footer />
-      </Fragment>
-    );
-  }
+  </>
 }
 
 export default App;

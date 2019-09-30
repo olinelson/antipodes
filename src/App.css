@@ -80,9 +80,6 @@ a{
   
 }
 
-.icon {
-  font-size: 1.5rem !important;
-}
 
 .menu_bar {
   /* background-color: white !important; */
@@ -94,46 +91,10 @@ border: none !important;
   font-size: 10rem !important;
 }
 
-i.icon {
-  font-size: 2rem !important;
-}
+
 
 /* hamburger menu styles */
 
-/* Position and sizing of burger button */
-.bm-burger-button {
-  position: fixed;
-  width: 5rem;
-  height: 3rem;
-  background-color: rgba(255, 255, 255, 0.577);
-  right: 0px;
-  top: 4vw;
-  display: grid;
-  align-content: center !important;
-  border-radius:  18px 0 0 18px;
-
-
-}
-.bm-burger-button .icon {
-  font-size: 2rem !important;
-  color: #3585AB;
-
-
-
-}
-
-.bm-cross-button {
-
-  top: 3.5rem !important;
-  right: 1.5rem !important;
-}
-/* Color/shape of close button cross */
-.bm-cross {
-
-  color: white;
-  font-size: 2rem!important;
-
-}
 
 /*
 Sidebar wrapper styles

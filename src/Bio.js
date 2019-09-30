@@ -1,9 +1,7 @@
 import React from "react";
-import { Container, Segment, Icon, Grid, Image } from "semantic-ui-react";
+import { Container, Grid, Image } from "semantic-ui-react";
 
 import Quote from "./Quote";
-
-import DividerImage from "./DividerImage";
 
 export default function Bio() {
   return (
@@ -24,7 +22,6 @@ export default function Bio() {
             <Image
               centered
               size="medium"
-
               src="https://raw.githubusercontent.com/olinelson/antipodes/master/public/antipodes1/antipodes1tablet.jpg"
             />
           </Grid.Column>

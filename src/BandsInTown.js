@@ -10,7 +10,7 @@ export default function BandsInTown() {
           class="bit-widget-initializer"
           data-artist-name="Antipodes"
           data-display-local-dates="false"
-          data-display-past-dates="false"
+          data-display-past-dates="true"
           data-auto-style="false"
           data-text-color="#000000"
           data-link-color="#3585AB"
@@ -18,7 +18,7 @@ export default function BandsInTown() {
           data-display-limit="15"
           data-link-text-color="#FFFFFF"
           data-display-lineup="false"
-          data-display-play-my-city="false"
+          data-display-play-my-city="true"
           data-separator-color="rgba(124,124,124,0.25)"
         />
       </Segment>

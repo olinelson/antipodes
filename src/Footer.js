@@ -21,10 +21,7 @@ export default function Footer() {
       }}
     >
       <Container text>
-        <p>
-          <Icon name="copyright" />
-          Antipodes {generateCurrentYear()}
-        </p>
+
       </Container>
     </Container>
   );

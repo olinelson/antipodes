@@ -1,25 +1,14 @@
 import React from "react";
-import { Button, Checkbox, Form, Container } from "semantic-ui-react";
+import { Button, Form, Container } from "semantic-ui-react";
 
 export default function Contact() {
   return (
-    <Container>
+    <Container text>
       <Form action="https://formspree.io/lukesweeting@gmail.com" method="POST">
         <h1>Contact</h1>
-        <Form.Field>
-          <label>Full Name</label>
-          <input name="name" placeholder="Full Name" />
-        </Form.Field>
-        <Form.Field>
-          <label>Email</label>
-          <input type="email" name="email" placeholder="youremail@gmail.com" />
-        </Form.Field>
-        <Form.Field />
-        <Form.TextArea
-          name="message"
-          label="Message"
-          placeholder="Tell us more about you..."
-        />
+        <Form.Input name="name" placeholder="Mike Nock" />
+        <Form.Input name="email" type="email" placeholder="pocket_science@gmail.com" />
+        <Form.TextArea name="message" label="Message" placeholder="It Was the Best of Times; It Was the Worst of Times..." />
         <Button type="submit">Submit</Button>
       </Form>
     </Container>
