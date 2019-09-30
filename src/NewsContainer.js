@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, Header, Image, Grid, Embed } from "semantic-ui-react";
+import { Container, Header, Grid } from "semantic-ui-react";
 
 export default function NewsContainer() {
   return (

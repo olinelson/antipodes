@@ -4,7 +4,7 @@ import pic1 from "./resources/pic1.jpg";
 import pic2 from "./resources/pic2.jpg";
 import pic3 from "./resources/pic3.jpg";
 
-import { Embed, Container, Icon } from "semantic-ui-react";
+import { Embed, Container } from "semantic-ui-react";
 
 // this sample arrow next stuff is to overide the built in styling of the next buttons.
 // there are overides for the backgorund color in app.css

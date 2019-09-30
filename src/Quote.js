@@ -1,5 +1,5 @@
 import React from "react";
-import { Segment, Icon, Container } from "semantic-ui-react";
+import { Segment, Icon } from "semantic-ui-react";
 
 export default function Quote(props) {
   return (
