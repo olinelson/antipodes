@@ -27,7 +27,7 @@ const FooterContainer = styled.div`
 const Hamburger = styled(Icon)`
   position: fixed;
   top: 1.25rem;
-  right: 4rem;
+  right: 1.25rem;
   z-index: 100;
   cursor: pointer;
   color: white;
