@@ -18,8 +18,9 @@ const RefDivider = styled.div`
 `
 const FooterContainer = styled.div`
     height: 40vh;
-    display: grid;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     background: rgba(0,0,0,0);
   `
@@ -146,7 +147,9 @@ function App() {
         <Icon name="copyright" />
         Antipodes {new Date().getFullYear()}
       </p>
+      <small>designed and developed by <a target="blank" href="http://olinelson.com">Oli Nelson</a></small>
     </FooterContainer>
+
 
 
   </>
