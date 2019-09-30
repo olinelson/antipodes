@@ -1,13 +1,10 @@
 import React, { useState, useRef } from "react";
-import "./App.css";
+import "semantic-ui-css/semantic.min.css";
 
 // semantic components
-import { Divider, Icon, Menu, Sidebar, Container } from "semantic-ui-react";
+import { Divider, Icon, Menu, Sidebar } from "semantic-ui-react";
 
-
-// page components
 // import NavBar from "./NavBar";
-import Banner from "./Banner";
 import NewsContainer from "./NewsContainer";
 import BandsInTown from "./BandsInTown";
 import Video from "./Video";
@@ -29,9 +26,12 @@ const FooterContainer = styled.div`
 
 const Hamburger = styled(Icon)`
   position: fixed;
-  top: 1.5rem;
-  right: 2rem;
+  top: 1.25rem;
+  right: 4rem;
   z-index: 100;
+  cursor: pointer;
+  color: white;
+  text-shadow: -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey, 1px 1px 0 grey;
   visibility: ${(props) => props.visible ? 'visible' : 'hidden'};
 `
 
@@ -51,8 +51,9 @@ function App() {
     <Hamburger visible={!sideBarOpen} name="bars" size="big" onClick={() => setSideBarOpen(!sideBarOpen)} />
 
     <Sidebar
-      style={{ background: 'rgba(255,255,255,0.6)' }}
+      style={{ background: 'rgba(0,0,0,0.6)' }}
       as={Menu}
+      inverted
       animation='push'
       icon='labeled'
       onHide={() => setSideBarOpen(false)}
@@ -62,10 +63,13 @@ function App() {
       direction='right'
     >
       <Menu.Item
+        inverted
         onClick={() => setSideBarOpen(false)}
         icon="delete"
+
       />
       <Menu.Item
+        inverted
         onClick={() => window.scroll({ top: homeRef.current.offsetTop, behavior: 'smooth' })}
         content="Top"
       />
@@ -104,8 +108,11 @@ function App() {
 
 
     {/* Home */}
-    <div ref={homeRef} />
-    <Banner />
+    <div ref={homeRef} className="banner">
+      <div className="banner-text-container">
+        <h1>Antipodes</h1>
+      </div>
+    </div>
 
     {/* News Section */}
     <RefDivider ref={newsRef} />

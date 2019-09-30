@@ -4,15 +4,10 @@ import { Container, Header, Image, Grid, Embed } from "semantic-ui-react";
 
 export default function NewsContainer() {
   return (
-    <Container
-      // style={{
-      //   paddingTop: "2rem"
-      // }}
-    >
+    <Container>
       <Grid stackable={true} columns={2} relaxed="very">
         <Grid.Column textAlign="justified">
           <Header as="h1">New Album Out Now</Header>
-         
           <p>
             'Antipodes' are a group of some extremely fine NZ and AU musicians
             writing original jazz music blurring the lines between art music and

@@ -8,6 +8,7 @@ import { Embed, Container, Icon } from "semantic-ui-react";
 
 // this sample arrow next stuff is to overide the built in styling of the next buttons.
 // there are overides for the backgorund color in app.css
+
 import InfiniteCarousel from "react-leaf-carousel";
 
 export default class Video extends Component {

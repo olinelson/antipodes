@@ -6,7 +6,6 @@
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
-    "react-burger-menu": "^2.6.10",
     "react-dom": "^16.8.6",
     "react-leaf-carousel": "^1.2.2",
     "react-scripts": "3.0.1",

@@ -7,7 +7,7 @@ export default function BandsInTown() {
       {/* <h1>Events</h1>/ */}
       <Segment>
         <a
-          class="bit-widget-initializer"
+          className="bit-widget-initializer"
           data-artist-name="Antipodes"
           data-display-local-dates="false"
           data-display-past-dates="true"
