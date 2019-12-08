@@ -8,9 +8,9 @@ export default function Bio() {
     <Container text>
       <Grid stackable>
         <Grid.Row>
-          <Grid.Column textAlign="justified" width={8}>
+          <Grid.Column textAlign='justified' width={8}>
             <p>
-              <span className="h1 ui header">Antipodes</span> is a collective of
+              <span className='h1 ui header'>Antipodes</span> is a collective of
               New Zealand, Australian and European jazz musicians co-led by
               pianist Luke Sweeting (Freedman Jazz Fellowship finalist 2016) and
               saxophonist Jake Baxendale. The group plays original compositions
@@ -21,27 +21,26 @@ export default function Bio() {
           <Grid.Column width={8}>
             <Image
               centered
-              size="medium"
-              src="https://raw.githubusercontent.com/olinelson/antipodes/master/public/antipodes1/antipodes1tablet.jpg"
+              size='medium'
+              src='https://raw.githubusercontent.com/olinelson/antipodes/master/public/antipodes1/antipodes1tablet.jpg'
             />
           </Grid.Column>
         </Grid.Row>
 
         <Quote
-          body="A great blowing band with dense heads, occasional free and floating segments, room for solos and some great grooves"
-          author="Eric Pozza - Canberra Jazz"
+          body='A great blowing band with dense heads, occasional free and floating segments, room for solos and some great grooves'
+          author='Eric Pozza - Canberra Jazz'
         />
 
         <Grid.Row>
-          <Grid.Column textAlign="justified" width={8}>
+          <Grid.Column textAlign='justified' width={8}>
             <Image
               centered
-              size="medium"
-
-              src="https://raw.githubusercontent.com/olinelson/antipodes/master/public/band1/band1tablet.jpg"
+              size='medium'
+              src='https://raw.githubusercontent.com/olinelson/antipodes/master/public/band1/band1tablet.jpg'
             />
           </Grid.Column>
-          <Grid.Column textAlign="justified" width={8}>
+          <Grid.Column textAlign='justified' width={8}>
             <p>
               Described during their recent tour of Australia as “a great
               blowing band with dense heads, occasional free and floating
@@ -55,8 +54,8 @@ export default function Bio() {
           </Grid.Column>
         </Grid.Row>
         <Quote
-          body="Antipodes hits the mark on a number of levels. Firstly the writing is superb. The musicianship is also great but for me it is the communication of a shared vision that lifts them above the ordinary."
-          author="John Fenton - Jazz Local 32"
+          body='Antipodes hits the mark on a number of levels. Firstly the writing is superb. The musicianship is also great but for me it is the communication of a shared vision that lifts them above the ordinary.'
+          author='John Fenton - Jazz Local 32'
         />
         <p style={{ textAlign: "justify" }}>
           Antipodes was formed after a chance meeting between Jake, Luke and

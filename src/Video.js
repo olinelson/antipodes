@@ -41,9 +41,9 @@ export default class Video extends Component {
           scrollOnDevice={true}
           swipe={true}
         >
-          <Embed id="NnFzxJgZjiI" placeholder={pic1} source="youtube" />
-          <Embed id="4BPnDuYu8Ts" placeholder={pic2} source="youtube" />
-          <Embed id="uaN1BwKqg1Q" placeholder={pic3} source="youtube" />
+          <Embed id='NnFzxJgZjiI' placeholder={pic1} source='youtube' />
+          <Embed id='4BPnDuYu8Ts' placeholder={pic2} source='youtube' />
+          <Embed id='uaN1BwKqg1Q' placeholder={pic3} source='youtube' />
         </InfiniteCarousel>
       </Container>
     );
